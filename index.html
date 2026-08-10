@@ -4,181 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Introduction Website</title>
-    <style type="text/css">
-        * {
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html{
-            scroll-behavior: smooth;
-        }
-        body {
-            background-image: url('img/Nia.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            font-family: Calibri, sans-serif;
-        }
-
-
-        .navbar {
-            background-color: rgb(186, 165, 255, 70%); 
-            font-family: 'Times New Roman', Times, serif; 
-            padding: 0 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .navdiv {
-            height: 100px;
-            display: flex; 
-            align-items: center; 
-            justify-content: space-between;
-        }
-
-        .logo a {
-            font-size: 40px; 
-            font-weight: 600; 
-            color: white;
-        }
-
-        li {
-            list-style: none; 
-            display: inline-block;
-        }
-
-        li a {
-            color: white; 
-            font-size: 24px; 
-            font-weight: bold; 
-            margin-right: 25px;
-        }
-
-        button {
-            background-color: #ffa3a3; 
-            margin-left: 10px; 
-            border-radius: 10px; 
-            padding: 10px; 
-            width: 80px;
-            font-size: 18px;
-            border: none;
-            cursor: pointer;
-        }
-
-        button a {
-            color: white; 
-            font-weight: bold; 
-            font-size: 16px;
-        }
-
-
-        .main {
-            color: #ffffff;
-            font-size: 28px;
-            background-color: rgba(10, 3, 34, 90%);
-            padding: 40px;
-            margin: 40px auto;
-            max-width: 1200px;
-            width: 90%;
-            border-radius: 40px;
-            
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .container {
-            flex: 1;
-        }
-
-        .portrait-frame {
-            max-width: 400px;
-            width: 100%;
-            flex-shrink: 0;
-        }
-
-        .portrait-frame img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 25px;
-            object-fit: cover;
-        }
-
-
-        .educontainer {
-            width: 100%;
-            background-color: rgb(0, 0, 0, 40%);
-            border-radius: 30px;
-            padding: 30px;
-        }
-
-        .educontainer > h4 {
-            font-size: 36px;
-            margin-bottom: 25px;
-            color: #ffffff;
-            border-bottom: 2px solid rgb(255, 255, 255, 40%);
-            padding-bottom: 10px;
-        }
-
-        
-        .edubox-wrapper {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-            flex-wrap: wrap; 
-        }
-
-        .edubox {
-            flex: 1;
-            min-width: 250px;
-            background-color: rgb(248, 184, 184, 20%);
-            padding: 25px;
-            border-radius: 20px;
-            border: 1px solid rgb(255, 255, 255, 30%);
-            text-align: left;
-        }
-
-        .edubox h5 {
-            font-size: 26px;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-
-        .edubox p {
-            font-size: 18px;
-            color: #e0e0e0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Top navigation bar -->
     <nav class="navbar">
         <div class="navdiv">
-            <div class="logo"><a href="#">Personal Introduction</a></div>
+            <div class="logo"><a href="#home">Chi</a></div>
             <ul>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Educational Background</a></li>
+                <li><a href="#education">Educational</a></li>
                 <li><a href="#hobbies">Hobbies</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- About Me -->
-    <section class="main" id="about">
+    <!-- Home -->
+    <section class="main" id="home">
         <div class="container">
-            <p>Hi, I am Christian. This website is made to give an idea about myself.</p>
+            <p>Yaho, I am Christian. This website is made to give an idea about myself.</p>
         </div>
         <figure class="portrait-frame">
             <img src="img/portrait.jpg" alt="Display photo of Christian">
         </figure>
     </section>
 
+    <!-- About Me -->
+    <section class="main" id="about">
+        <div class="container">
+            <h4>About Me</h4>
+            <p>Konnichiwa, my full name is Christian F. De Leon. I'm currently 20 years old and I was born on March 22, 2006.</p>
+        </div>
+    </section>
+    
     <!-- Educational Background -->
     <section class="main" id="education">
         <div class="educontainer">
@@ -204,7 +64,54 @@
     <section class="main" id="hobbies">
         <div class="educontainer">
             <h4>Hobbies</h4>
-            <p style="font-size: 20px;">Testing</p>
+            
+            <div class="hobbybox">
+                <h5>Favorite games I play with my favorite character in each game</h5>
+                
+                <div class="hobby-gallery">
+                    <div class="hobby-card">
+                        <span>Wuthering Waves</span>
+                        <img src="img/denia.jpg" alt="picture of denia">
+                    </div>
+
+                    <div class="hobby-card">
+                        <span>Zenless Zone Zero</span>
+                        <img src="img/yeshunguang.jpg" alt="picture of ye shunguang">
+                    </div>
+
+                    <div class="hobby-card">
+                        <span>Honkai Star Rail</span>
+                        <img src="img/firefly.jpg" alt="picture of firefly">
+                    </div>
+
+                    <div class="hobby-card">
+                        <span>Valorant</span>
+                        <img src="img/neon.jpg" alt="picture of neon">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobbybox">
+                <h5>Drawings I recently made starting this year</h5>
+                <div class="hobby-gallery">
+                     <div class="hobby-card">
+                        <span>Kasane Teto</span>
+                        <img src="img/drawing1.png" alt="picture of teto">
+                    </div>
+                    <div class="hobby-card">
+                        <span>Evernight</span>
+                        <img src="img/drawing2.png" alt="picture of evernight">
+                    </div>
+                    <div class="hobby-card">
+                        <span>Firefly</span>
+                        <img src="img/drawing3.png" alt="picture of firefly">
+                    </div>
+                    <div class="hobby-card">
+                        <span>Denia</span>
+                        <img src="img/drawing4.png" alt="picture of denia">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
